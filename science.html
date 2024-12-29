@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Club</title>
+    <link rel="icon" href="assets/clublogos/club-logo-withbackground.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom Styles for Science Club */
+
+        /* Header Styles */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 60px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header p.lead {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .header-logo img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        /* Event List Styles */
+        ul.list-group {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul.list-group li {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Navbar styling */
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            color: #ddd;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        /* Active page style */
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            border-bottom: 3px solid #17a2b8;
+        }
+
+        /* Hover effect */
+        .navbar-nav .nav-link:hover {
+            color: #17a2b8;
+            border-bottom: 3px solid #17a2b8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p.lead {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <div class="header-logo">
+                <img src="assets/clublogos/science.png" alt="Science Club Logo">
+            </div>
+            <h1>Science Club</h1>
+            <p class="lead">Where Curiosity Meets Discovery</p>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span>SciTech Club</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="science.html">Science Club</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="technology.html">Technology Club</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html">Membership</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="container my-5">
+        <h2>About the Science Club</h2>
+        <p>The Science Club at HPTU is dedicated to fostering curiosity and scientific thinking among students. We
+            organize various workshops, experiments, and projects related to physics, chemistry, biology, and other
+            fields of science.</p>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="container my-5">
+        <h3>Upcoming Events</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Workshop on Renewable Energy – October 15</li>
+            <li class="list-group-item">Astronomy Night – November 5</li>
+            <li class="list-group-item">Science Fair – December 12</li>
+        </ul>
+    </section>
+
+    <!-- Past Events Section -->
+    <section class="container my-5">
+        <h3>Past Events</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Seminar on Quantum Physics – July 2024</li>
+            <li class="list-group-item">Biology in Daily Life – August 2024</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 SciTech Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

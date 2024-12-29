@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Club</title>
+    <link rel="icon" href="assets/clublogos/club-logo-withbackground.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <style>
+        /* Custom Styles */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p.lead {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+
+        ul.list-group {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.list-group .list-group-item {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        a.nav-link.active {
+            font-weight: bold;
+        }
+
+        .container h2, .container h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Logo Styling */
+        .navbar-brand img {
+            width: 40px; /* Adjust the size as needed */
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header-logo img {
+            width: 200px;
+            height: 200px;
+        }
+               /* Navbar brand logo */
+/* Header logo styling */
+.club-logo {
+    height: 200px; /* Adjust the height as needed */
+    margin-right: 20px; /* Add spacing between the logo and text */
+}
+
+
+/* Navbar styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: #ddd;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Active page style */
+.navbar-nav .nav-link.active {
+    color: #fff;
+    border-bottom: 3px solid #17a2b8; /* Bootstrap info color */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    border-bottom: 3px solid #17a2b8;
+}
+
+/* Mobile navbar adjustments */
+@media (max-width: 992px) {
+    .navbar-brand span {
+        font-size: 1.25rem;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        padding: 15px;
+    }
+}
+         </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+   
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <div class="header-logo">
+                <img src="assets/clublogos/tech logo.png" alt="Technology Club Logo"> <!-- Optional header logo -->
+            </div>
+            <h1>Technology Club</h1>
+            <p class="lead">Where Code Meets Creativity</p>
+        </div>
+    </header>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              
+            
+                <span>SciTech Club</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="science.html">Science Club</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="technology.html">Technology Club</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html">Membership</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- About Section -->
+    <section class="container my-5">
+        <h2>About the Technology Club</h2>
+        <p>The Technology Club at HPTU focuses on innovation, coding, and engineering projects. We engage in activities such as hackathons, workshops on emerging technologies like AI, IoT, and robotics, and offer students opportunities to build and showcase their tech skills.</p>
+    </section>
+
+    <!-- Events Section -->
+    <section class="container my-5">
+        <h3>Upcoming Events</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Hackathon 2024 – October 25</li>
+            <li class="list-group-item">Workshop on AI and Machine Learning – November 10</li>
+            <li class="list-group-item">IoT for Smart Homes – December 7</li>
+        </ul>
+
+        <h3 class="mt-4">Past Events</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Introduction to Web Development – June 2024</li>
+            <li class="list-group-item">Building a Simple Robot – August 2024</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 SciTech Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

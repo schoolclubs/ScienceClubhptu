@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/clublogos/club-logo-withbackground.png" type="image/x-icon">
+    <title>Science and Technology Club - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            color: #333;
+            background-color: #f0f8ff; /* Light blue background for the page */
+        }
+       
+        /* Marquee custom styles */
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            background: #f8f9fa;
+            color: #212529;
+            padding: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .marquee span {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+      
+        /* Navbar brand logo */
+/* Header logo styling */
+
+
+
+/* Navbar styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: #ddd;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Active page style */
+.navbar-nav .nav-link.active {
+    color: #fff;
+    border-bottom: 3px solid #17a2b8; /* Bootstrap info color */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    border-bottom: 3px solid #17a2b8;
+}
+
+/* Mobile navbar adjustments */
+@media (max-width: 992px) {
+    .navbar-brand span {
+        font-size: 1.25rem;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        padding: 15px;
+    }
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    padding: 15px; /* Padding around text */
+}
+
+.carousel-item img {
+    object-fit:cover; /* Ensures the image covers the container without distortion */
+    height: 600px; /* Fixed height for all images */
+    width: 100%; /* Full width of the container */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container d-flex align-items-center justify-content-center">
+           
+            <div>
+                <h1>Welcome to the Students' Clubs of HPTU <br> University Schools of Studies
+                    </h1>
+                <p class="lead">'ज्ञानम् विज्ञानसंगीतम्' <br>'The Harmony of Knowledge and Science.'</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              
+            
+                <span>SciTech Club</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="science.html">Science Club</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="technology.html">Technology Club</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html">Membership</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Marquee Section -->
+    <div class="marquee">
+        <span>Upcoming Events: Workshop on AI - Sept 10 | Robotics Competition - Sept 15 | Hackathon - Sept 25 | Guest Lecture on Quantum Computing - Oct 1</span>
+    </div>
+
+    <!-- Slider Section -->
+    <div id="eventSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/current-events/event1.jpg" class="d-block w-100" alt="Event 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>HPTU Hamirpur</h5>
+                    <p>A State Govt University.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/clublogos/club-both (2).png" class="d-block w-100" alt="Event 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Proposed Club Logos</h5>
+                    <p>Logo designs to represent our club's identity.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/clublogos/club-structure.png" class="d-block w-100" alt="Event 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Club Structure</h5>
+                    <p> Organizational framework to enhance collaboration and efficiency within our club.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/clublogos/thankyu.jpg" class="d-block w-100" alt="Event 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Thankyou</h5>
+                   
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#eventSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eventSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+    <main class="container my-5">
+
+        <section class="mb-5">
+            <h2>Objectives of the Club</h2>
+            <p>The Science and Technology Club aims to foster a community of innovation and learning. Our objectives include:</p>
+            <ul>
+                <li><strong>Promoting Innovation:</strong> Encourage students to think creatively and develop innovative solutions to real-world problems.</li>
+                <li><strong>Knowledge Sharing:</strong> Create a platform for students to share their knowledge and skills in various domains of science and technology.</li>
+                <li><strong>Practical Learning:</strong> Organize workshops, seminars, and hands-on sessions to enhance practical knowledge and technical skills.</li>
+                <li><strong>Collaboration:</strong> Facilitate collaboration between students, faculty, and industry professionals to work on exciting projects and research.</li>
+                <li><strong>Leadership Development:</strong> Develop leadership skills by providing opportunities to lead projects, teams, and club activities.</li>
+                <li><strong>Career Guidance:</strong> Provide guidance and support for students interested in pursuing careers in science and technology fields.</li>
+            </ul>
+        </section>
+    
+       
+        <section>
+            <h2 class="mb-4">Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="assets/current-events/event1.jpg" class="img-fluid" alt="Event 1">
+                        <p class="mt-2">A brief description of Event 1.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="assets/current-events/event2.jpg" class="img-fluid" alt="Event 2">
+                        <p class="mt-2">A brief description of Event 2.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="assets/current-events/event3.jpg" class="img-fluid" alt="Event 3">
+                        <p class="mt-2">A brief description of Event 3.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        
+        <style>
+            .gallery-item img {
+                width: 100%;
+                height: 200px; /* Maintain aspect ratio */
+                border-radius: 8px; /* Optional: Add rounded corners */
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Add shadow for depth */
+            }
+        </style>
+        
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Science and Technology Club. All rights reserved.</p>
+            <p>Follow us on
+                <a href="#" class="text-white">Facebook</a> |
+                <a href="#" class="text-white">Twitter</a> |
+                <a href="#" class="text-white">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
