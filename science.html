@@ -98,6 +98,46 @@
                 font-size: 1rem;
             }
         }
+        .flowchart {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .node {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #007bff; /* Blue border color */
+            border-radius: 8px;
+            position: relative;
+            background-color: #e7f0ff; /* Light blue background for nodes */
+            color: #004085; /* Dark blue text color */
+        }
+        .node::before,
+        .node::after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        .children {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .children > .node {
+            margin: 0 5px;
+        }
+        .advisory-board {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .advisory-board > .node {
+            margin: 0 5px;
+        }
     </style>
 </head>
 
@@ -135,9 +175,9 @@
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="technology.html">Technology Club</a>
                     </li> -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="events.html">Events</a>
                     </li>
@@ -162,7 +202,158 @@
             organize various workshops, experiments, and projects related to physics, chemistry, biology, and other
             fields of science.</p>
     </section>
+    <section class="container my-5">
+        <h2>Club Overview</h2>
+        <p>The Science and Technology Club was founded in [Year] with the aim of fostering a passion for science and technology among students. Our club is committed to providing a platform where members can engage in various scientific and technological endeavors, collaborate on innovative projects, and gain valuable experience.</p>
+        <p><strong>Objectives:</strong></p>
+        <ul>
+            <li>To encourage students to explore and pursue careers in science and technology.</li>
+            <li>To provide hands-on experience with advanced technology and scientific tools.</li>
+            <li>To support and mentor students in their projects and research.</li>
+            <li>To create opportunities for networking with professionals and peers in the field.</li>
+        </ul>
+        <p><strong>Focus Areas:</strong></p>
+        <ul>
+            <li><strong>e-Yantra:</strong> Engaging in robotics projects and competitions to enhance practical skills.</li>
+            <li><strong>Electronics:</strong> Exploring various electronic devices and systems through experiments and projects.</li>
+            <li><strong>Computer Science:</strong> Delving into programming, software development, and computational theory.</li>
+            <li><strong>Environmental Science:</strong> Addressing environmental issues through technological solutions and research.</li>
+            <li><strong>Other Areas:</strong> Exploring other emerging fields of science and technology based on members' interests.</li>
+        </ul>
+    </section>
 
+
+    <section class="container my-5">
+
+
+
+   
+
+
+        <h2>Club Leadership Flowchart</h2>
+        <div class="flowchart">
+            <div class="node">
+                <h4>President</h4>
+                
+            </div>
+            <div class="children">
+                <div class="node">
+                    <h4>Vice President </h4>
+                   
+                </div>
+               
+                    
+                </div>
+            </div>
+            <div class="children">
+                <div class="node">
+                    <h4>Secretary</h4>
+                   
+                </div>
+            </div>
+            <div class="children">
+                <div class="node">
+                    <h4>Joint Secretary </h4>
+                   
+                       
+                        
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="children">
+                <div class="node">
+                    <h4>Treasurer</h4>
+                    
+                </div>
+            </div>
+            <div class="children">
+                <div class="node">
+                    <h4>Executive Members </h4>
+                    <div class="children">
+                        <div class="node">
+                            <p>Executive Member 1
+                                </p>
+                        </div>
+                        <div class="node">
+                            <p>
+                                Executive Member 2</p>
+                        </div>
+                        <div class="node">
+                            <p>
+                                Executive Member 3</p>
+                        </div>
+                        <div class="node">
+                            <p>
+                                Executive Member 4</p>
+                        </div>
+    
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <h2>Advisory Board Flowchart</h2>
+        <div class="flowchart">
+            <div class="advisory-board">
+                <div class="children">
+                    <div class="node">
+                        <h4>Dean</h4>
+                        <p>University Schools of Studies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="children"></div>
+                <div class="node">
+                   
+            <div class="children">
+                <div class="node">
+                    <h4>Finance Officer</h4>
+                </div>
+                <div class="node">
+                    <h4>Deputy Registrar</h4>
+                </div>
+                <div class="node">
+                    <h4>Estate Officer</h4>
+                </div>
+                <div class="node">
+                    <h4>Project Officer</h4>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    
+        <h2>Faculty Incharges</h2>
+        <div class="flowchart">
+            <div class="advisory-board">
+                <div class="children">
+                    <div class="node">
+                        <h4>Faculty Coordinator</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="children">
+                <div class="node">
+                    <h4>Faculty Co-Coordinators</h4>
+                <div class="children">
+                <div class="node">
+                    <h4>Faculty Incharge 1</h4>
+                    
+                </div>
+                <div class="node">
+                    <h4>Faculty Incharge 2</h4>
+                   
+                </div>
+               
+            </div>
+            </div>
+        
+        
+        </div>
+    </section>
     <!-- Upcoming Events Section -->
     <section class="container my-5">
         <h3>Upcoming Events</h3>
