@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,18 +161,18 @@
             </div>
         </section>
 
-        <!-- Past Events Gallery Section -->
+        <!-- Past Events Gallery Section
         <section class="mt-10">
             <h2>Past Events Gallery</h2>
             <div class="row event-gallery">
                 <div class="col-md-4">
-                    <img src="assets/past-events/event1.jpg" alt="Past Event 1">
+                    <img src="C:\Users\ujbal\Desktop\Images\uni.jpg" alt="Past Event 1">
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/past-events/ozone_day/event1.jpg" alt="Past Event 2">
+                    <img src="C:\Users\ujbal\Desktop\Images\uni.jpg" alt="Past Event 2">
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/past-events/ozone_day/collage.png" alt="Past Event 3">
+                    <img src="C:\Users\ujbal\Desktop\Images\uni.jpg" alt="Past Event 3">
                 </div>
                 <div class="col-md-4">
                     <img src="assets/past-events/ozone_day/event4.jpg" alt="Past Event 4">
@@ -184,8 +185,70 @@
                 </div>
             </div>
         </section>
-    </main>
-
+    </main> -->
+    <h2>Past Events Gallery</h2>
+    <div class="gallery">
+        <div class="gallery-item"><img src="assets/past-events/event1.jpg" alt="Past Event 1"></div>
+        <div class="gallery-item"><img src="assets/past-events/ozone_day/event1.jpg" alt="Past Event 2"></div>
+        <div class="gallery-item"><img src="assets/past-events/ozone_day/collage.png" alt="Past Event 3"></div>
+        <div class="gallery-item"><img src="assets/past-events/ozone_day/event4.jpg" alt="Past Event 4"></div>
+        <div class="gallery-item"><img src="assets/past-events/ozone_day/event3.jpg" alt="Past Event 5"></div>
+        <div class="gallery-item"><img src="assets/past-events/ozone_day/evenr2.jpg" alt="Past Event 6"></div>
+    </div>
+    
+    
+    </div>
+ <style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 20px;
+        grid-auto-rows: 150px; /* Reduced row height for smaller images */
+      }
+  
+      .gallery-item {
+        background-color: white;
+        padding: 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the space */
+        display: block;
+      }
+  
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+      /* Add more random height variations to create a dynamic layout */
+      .gallery-item:nth-child(odd) {
+        grid-row-end: span 2; /* Makes odd images take more space vertically */
+      }
+  
+      .gallery-item:nth-child(4) {
+        grid-row-end: span 2; /* Makes the 4th item taller */
+      }
+  
+      .gallery-item:nth-child(6) {
+        grid-row-end: span 2; /* Makes the 6th item taller */
+      }
+ </style>
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p>&copy; 2024 Science and Technology Club. All rights reserved.</p>
