@@ -25,7 +25,11 @@
         <meta property="og:image" content="https://schoolclubs.github.io/ScienceClubhptu/assets/clublogos/club-logo-withbackground.png">
         <meta property="og:url" content="https://schoolclubs.github.io/ScienceClubhptu/">
         <meta property="og:type" content="website">
-    
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
       
     
     <style>
@@ -107,17 +111,45 @@
         padding: 15px;
     }
 }
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: white; /* Text color */
-    padding: 15px; /* Padding around text */
+/* Swiper Container */
+.swiper {
+    width: 100%;
+    
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.carousel-item img {
-    object-fit:contain; /* Ensures the image covers the container without distortion */
-    height: 600px; /* Fixed height for all images */
-    width: 100%; /* Full width of the container */
+/* Swiper Slides */
+.swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Slide Images */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the entire image is visible */
+}
+
+/* Captions */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 
 
     </style>
@@ -184,53 +216,93 @@
     </div> -->
 
     <!-- Slider Section -->
-    <div id="eventSlider" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/current-events/event1.jpg" class="d-block w-100" alt="Event 1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>HPTU Hamirpur</h5>
-                    <p>A State Govt University.</p>
+
+        <!-- Swiper Slider Container -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="assets/current-events/event1.jpg" alt="Event 1">
+                    <div class="caption">
+                        <h5>HPTU Hamirpur</h5>
+                        <p>A State Govt University.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="assets/clublogos/club-logo-withbackground.png" alt="Event 2">
+                    <div class="caption">
+                        <h5>Club Logo</h5>
+                        <p>Logo designs to represent our club's identity.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="assets/past-events/ozone_day/event3.jpg" alt="Event 3">
+                    <div class="caption">
+                        <h5>Children Day</h5>
+                        <p>Children Day Celebration at Govt. Primary School Matahni.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/past-events/ozone_day/event7.jpeg" alt="Event 3">
+                    <div class="caption">
+                        <h5>Children Day</h5>
+                        <p>Children Day Celebration at Govt. Primary School Matahni.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/past-events/ozone_day/event8.jpeg" alt="Event 3">
+                    <div class="caption">
+                        <h5>Children Day</h5>
+                        <p>Children Day Celebration at Govt. Primary School Matahni.</p>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <img src="assets/past-events/ozone_day/event6.jpeg" alt="Event 4">
+                    <div class="caption">
+                        <h5>Ozone Day</h5>
+                        <p>Ozone Day Celebration.</p>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <img src="assets/past-events/ozone_day/collage.png" alt="Event 5">
+                    <div class="caption">
+                        <h5>Thank You</h5>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/clublogos/club-both (2).png" class="d-block w-100" alt="Event 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Proposed Club Logos</h5>
-                    <p>Logo designs to represent our club's identity.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets\past-events\ozone_day\event3.jpg" class="d-block w-100" alt="Event 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Children Day</h5>
-                    <p>Children Day Celebration at Govt. Primary School Matahni.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets\past-events\ozone_day\event6.jpeg" class="d-block w-100" alt="Event 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Ozone Day</h5>
-                    <p>Ozone Day Celebration.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets\past-events\ozone_day\collage.png" class="d-block w-100" alt="Event 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Thankyou</h5>
-                   
-                </div>
-            </div>
+    
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#eventSlider" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#eventSlider" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    
+        <!-- Swiper JS Initialization -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var swiper = new Swiper(".mySwiper", {
+                    loop: true, // Enables infinite looping
+                    autoplay: {
+                        delay: 3000, // Auto slide every 3 seconds
+                        disableOnInteraction: false, // Keeps autoplay on even after manual navigation
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            });
+        </script>
     
 
     <main class="container my-5">
